@@ -8,7 +8,7 @@
 <style>
   :root { color-scheme: light dark; --bg: #faf8f5; --fg: #1d1a16; --muted: #6b645c; --accent: #9a5a12; --line: #e6e0d8; }
   @media (prefers-color-scheme: dark) { :root { --bg: #14110e; --fg: #efe9e1; --muted: #a59c91; --accent: #f2b54e; --line: #2c2620; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans Arabic', sans-serif; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans Arabic', 'Noto Sans Hebrew', Arial, sans-serif; }
   nav { position: sticky; top: 0; display: flex; gap: 8px; justify-content: center; padding: 12px; background: var(--bg); border-bottom: 1px solid var(--line); }
   nav a { padding: 6px 14px; border-radius: 99px; text-decoration: none; color: var(--fg); border: 1px solid var(--line); font-size: 14px; }
   nav a.on { background: var(--accent); color: #fff; border-color: var(--accent); }
@@ -22,25 +22,25 @@
 </style>
 </head>
 <body>
-<nav><a href="#en" data-l="en">English</a><a href="#ar" data-l="ar">العربية</a><a href="#tr" data-l="tr">Türkçe</a></nav>
+<nav><a href="#en" data-l="en">English</a><a href="#ar" data-l="ar">العربية</a><a href="#tr" data-l="tr">Türkçe</a><a href="#he" data-l="he">עברית</a></nav>
 <article lang="en" dir="ltr" id="en">
   <h1>Privacy Policy – Oud Tuner</h1>
-  <p class="date">Effective date: November 18, 2026</p>
+  <p class="date">Effective date: November 21, 2026</p>
   <p>This policy explains how Oud Tuner (“the app”) handles information. In short: the app does not collect, store on any server, share or sell any personal data.</p>
   <h2>Summary</h2>
   <p>Microphone sound is analysed in real time on your device only. It is never recorded, saved or sent anywhere.</p>
   <p>Your settings stay on your device.</p>
-  <p>No account, no analytics, no tracking, no advertising, no data sharing.</p>
+  <p>No account, no analytics, no tracking, no data sharing.</p>
   <p>The app works fully offline.</p>
   <h2>Microphone</h2>
   <p>The app needs microphone access to hear your instrument and measure its pitch. Audio is processed in your phone’s memory a fraction of a second at a time and is discarded immediately. No audio is stored on the device or transmitted.</p>
   <p>Android shows an indicator while the microphone is in use. You can allow or revoke the permission at any time in Android Settings → Apps → Oud Tuner → Permissions. Without it the tuner cannot work, but nothing else is affected.</p>
   <h2>Information stored on your device</h2>
-  <p>The app saves your preferences locally so they are kept between sessions: language, theme, selected tuning, custom tunings, reference pitch (A4), display and feedback options, whether onboarding was completed, and the optional “strings changed” date.</p>
+  <p>The app saves your preferences locally so they are kept between sessions: language, theme, selected tuning, custom tunings, reference pitch (A4), display and feedback options, whether onboarding was completed, the optional “strings changed” date, a simple counter of how many times the app was opened (it restarts after 50), and whether you were already asked to rate the app.</p>
   <p>This information never leaves your device and is not accessible to us. It is deleted when you use “Reset all settings”, clear the app’s data, or uninstall the app.</p>
   <h2>What we do not do</h2>
-  <p>We do not collect names, e-mail addresses, contacts, location, device identifiers, advertising IDs, usage statistics or crash reports.</p>
-  <p>The app contains no third-party analytics, tracking or advertising SDKs and makes no network requests.</p>
+  <p>We do not collect names, e-mail addresses, contacts, location, device identifiers, usage statistics or crash reports.</p>
+  <p>This version contains no third-party analytics or tracking SDKs and makes no network requests.</p>
   <p>We do not sell, rent or share personal information with anyone.</p>
   <h2>Permissions used</h2>
   <p>Microphone (RECORD_AUDIO, MODIFY_AUDIO_SETTINGS) – to hear and tune your instrument, on-device only.</p>
@@ -60,22 +60,22 @@
 </article>
 <article lang="ar" dir="rtl" id="ar">
   <h1>سياسة الخصوصية – Oud Tuner</h1>
-  <p class="date">تاريخ السريان: 18 نوفمبر 2026</p>
+  <p class="date">تاريخ السريان: 21 نوفمبر 2026</p>
   <p>توضّح هذه السياسة كيف يتعامل تطبيق Oud Tuner («التطبيق») مع المعلومات. باختصار: التطبيق لا يجمع أي بيانات شخصية ولا يحفظها على أي خادم ولا يشاركها ولا يبيعها.</p>
   <h2>ملخّص</h2>
   <p>يُحلَّل صوت الميكروفون لحظياً على جهازك فقط، ولا يُسجَّل أو يُحفظ أو يُرسَل إلى أي مكان.</p>
   <p>تبقى إعداداتك على جهازك.</p>
-  <p>لا حساب، لا تحليلات، لا تتبّع، لا إعلانات، ولا مشاركة للبيانات.</p>
+  <p>لا حساب، لا تحليلات، لا تتبّع، ولا مشاركة للبيانات.</p>
   <p>يعمل التطبيق بالكامل دون اتصال بالإنترنت.</p>
   <h2>الميكروفون</h2>
   <p>يحتاج التطبيق إلى الوصول إلى الميكروفون ليسمع آلتك ويقيس درجة الصوت. تتم معالجة الصوت في ذاكرة هاتفك لأجزاء من الثانية ثم يُحذف فوراً. لا يُخزَّن أي صوت على الجهاز ولا يُرسَل.</p>
   <p>يعرض أندرويد مؤشراً أثناء استخدام الميكروفون. يمكنك منح الإذن أو سحبه في أي وقت من: الإعدادات ← التطبيقات ← Oud Tuner ← الأذونات. بدونه لا يعمل المدوزن، ولا يتأثر أي شيء آخر.</p>
   <h2>المعلومات المحفوظة على جهازك</h2>
-  <p>يحفظ التطبيق تفضيلاتك محلياً لتبقى بين الاستخدامات: اللغة، السمة، الدوزان المختار، الدوزانات الخاصة، درجة المرجع (A4)، خيارات العرض والتنبيهات، إتمام شاشة البداية، وتاريخ تغيير الأوتار الاختياري.</p>
+  <p>يحفظ التطبيق تفضيلاتك محلياً لتبقى بين الاستخدامات: اللغة، السمة، الدوزان المختار، الدوزانات الخاصة، درجة المرجع (A4)، خيارات العرض والتنبيهات، إتمام شاشة البداية، تاريخ تغيير الأوتار الاختياري، عدّاداً بسيطاً لمرات فتح التطبيق (يُعاد بعد 50)، وما إذا كنا قد طلبنا منك تقييم التطبيق.</p>
   <p>لا تغادر هذه المعلومات جهازك ولا يمكننا الوصول إليها. تُحذف عند استخدام «إعادة ضبط كل الإعدادات» أو مسح بيانات التطبيق أو إلغاء تثبيته.</p>
   <h2>ما لا نفعله</h2>
-  <p>لا نجمع الأسماء أو عناوين البريد الإلكتروني أو جهات الاتصال أو الموقع أو معرّفات الجهاز أو معرّفات الإعلانات أو إحصاءات الاستخدام أو تقارير الأعطال.</p>
-  <p>لا يحتوي التطبيق على أي أدوات تحليل أو تتبّع أو إعلانات من أطراف ثالثة، ولا يرسل أي طلبات عبر الشبكة.</p>
+  <p>لا نجمع الأسماء أو عناوين البريد الإلكتروني أو جهات الاتصال أو الموقع أو معرّفات الجهاز أو إحصاءات الاستخدام أو تقارير الأعطال.</p>
+  <p>لا يحتوي هذا الإصدار على أي أدوات تحليل أو تتبّع من أطراف ثالثة، ولا يرسل أي طلبات عبر الشبكة.</p>
   <p>لا نبيع المعلومات الشخصية ولا نؤجّرها ولا نشاركها مع أي جهة.</p>
   <h2>الأذونات المستخدمة</h2>
   <p>الميكروفون (RECORD_AUDIO و MODIFY_AUDIO_SETTINGS) – لسماع آلتك ودوزنتها، على الجهاز فقط.</p>
@@ -95,22 +95,22 @@
 </article>
 <article lang="tr" dir="ltr" id="tr">
   <h1>Gizlilik Politikası – Oud Tuner</h1>
-  <p class="date">Yürürlük tarihi: 18 Kasım 2026</p>
+  <p class="date">Yürürlük tarihi: 21 Kasım 2026</p>
   <p>Bu politika, Oud Tuner uygulamasının (“uygulama”) bilgileri nasıl ele aldığını açıklar. Kısacası: uygulama hiçbir kişisel veriyi toplamaz, herhangi bir sunucuda saklamaz, paylaşmaz veya satmaz.</p>
   <h2>Özet</h2>
   <p>Mikrofon sesi yalnızca cihazınızda, gerçek zamanlı olarak analiz edilir. Asla kaydedilmez, saklanmaz veya herhangi bir yere gönderilmez.</p>
   <p>Ayarlarınız cihazınızda kalır.</p>
-  <p>Hesap yok, analiz yok, takip yok, reklam yok, veri paylaşımı yok.</p>
+  <p>Hesap yok, analiz yok, takip yok, veri paylaşımı yok.</p>
   <p>Uygulama tamamen çevrimdışı çalışır.</p>
   <h2>Mikrofon</h2>
   <p>Uygulama, enstrümanınızı duymak ve perdesini ölçmek için mikrofon erişimine ihtiyaç duyar. Ses, telefonunuzun belleğinde saniyenin küçük kesirleri boyunca işlenir ve hemen silinir. Hiçbir ses cihazda saklanmaz veya iletilmez.</p>
   <p>Mikrofon kullanılırken Android bir gösterge gösterir. İzni dilediğiniz zaman Android Ayarlar → Uygulamalar → Oud Tuner → İzinler bölümünden verebilir veya geri alabilirsiniz. İzin olmadan akort cihazı çalışmaz; başka hiçbir şey etkilenmez.</p>
   <h2>Cihazınızda saklanan bilgiler</h2>
-  <p>Uygulama, tercihlerinizi oturumlar arasında korumak için yerel olarak kaydeder: dil, tema, seçili akort, özel akortlar, referans perde (A4), görüntü ve geri bildirim seçenekleri, tanıtım ekranının tamamlanıp tamamlanmadığı ve isteğe bağlı “teller değişti” tarihi.</p>
+  <p>Uygulama, tercihlerinizi oturumlar arasında korumak için yerel olarak kaydeder: dil, tema, seçili akort, özel akortlar, referans perde (A4), görüntü ve geri bildirim seçenekleri, tanıtım ekranının tamamlanıp tamamlanmadığı, isteğe bağlı “teller değişti” tarihi, uygulamanın kaç kez açıldığını gösteren basit bir sayaç (50’de sıfırlanır) ve uygulamayı değerlendirmenizin daha önce istenip istenmediği.</p>
   <p>Bu bilgiler cihazınızdan asla çıkmaz ve bizim erişimimize açık değildir. “Tüm ayarları sıfırla” kullanıldığında, uygulama verileri temizlendiğinde veya uygulama kaldırıldığında silinir.</p>
   <h2>Yapmadıklarımız</h2>
-  <p>İsim, e-posta adresi, kişiler, konum, cihaz tanımlayıcıları, reklam kimlikleri, kullanım istatistikleri veya çökme raporları toplamayız.</p>
-  <p>Uygulama üçüncü taraf analiz, takip veya reklam SDK’ları içermez ve hiçbir ağ isteği yapmaz.</p>
+  <p>İsim, e-posta adresi, kişiler, konum, cihaz tanımlayıcıları, kullanım istatistikleri veya çökme raporları toplamayız.</p>
+  <p>Bu sürüm üçüncü taraf analiz veya takip SDK’ları içermez ve hiçbir ağ isteği yapmaz.</p>
   <p>Kişisel bilgileri kimseye satmayız, kiralamayız veya paylaşmayız.</p>
   <h2>Kullanılan izinler</h2>
   <p>Mikrofon (RECORD_AUDIO, MODIFY_AUDIO_SETTINGS) – enstrümanınızı duymak ve akort etmek için, yalnızca cihazda.</p>
@@ -128,6 +128,41 @@
   <h2>İletişim</h2>
   <p>Bu politika hakkında sorular için: <a href="mailto:shimsh2+oudtunerapp@gmail.com">shimsh2+oudtunerapp@gmail.com</a></p>
 </article>
+<article lang="he" dir="rtl" id="he">
+  <h1>מדיניות פרטיות – Oud Tuner</h1>
+  <p class="date">בתוקף מתאריך: 21 בנובמבר 2026</p>
+  <p>מדיניות זו מסבירה כיצד Oud Tuner (״האפליקציה״) מטפלת במידע. בקצרה: האפליקציה אינה אוספת, שומרת בשרת, משתפת או מוכרת מידע אישי כלשהו.</p>
+  <h2>תקציר</h2>
+  <p>הצליל מהמיקרופון מנותח בזמן אמת במכשיר שלך בלבד. הוא אף פעם לא מוקלט, נשמר או נשלח לשום מקום.</p>
+  <p>ההגדרות שלך נשארות במכשיר שלך.</p>
+  <p>אין חשבון, אין אנליטיקה, אין מעקב ואין שיתוף מידע.</p>
+  <p>האפליקציה עובדת במלואה ללא אינטרנט.</p>
+  <h2>מיקרופון</h2>
+  <p>האפליקציה צריכה גישה למיקרופון כדי לשמוע את הכלי ולמדוד את גובה הצליל. השמע מעובד בזיכרון הטלפון שבריר שנייה בכל פעם ונמחק מיד. שום שמע לא נשמר במכשיר ולא נשלח.</p>
+  <p>אנדרואיד מציג סימון כשהמיקרופון בשימוש. אפשר לאשר או לבטל את ההרשאה בכל עת בהגדרות אנדרואיד ← אפליקציות ← Oud Tuner ← הרשאות. בלעדיה הטיונר לא יכול לעבוד, אבל שום דבר אחר לא מושפע.</p>
+  <h2>מידע שנשמר במכשיר שלך</h2>
+  <p>האפליקציה שומרת את ההעדפות שלך מקומית כדי שיישמרו בין שימושים: שפה, ערכת נושא, הכיוון שנבחר, כיוונים מותאמים, צליל ייחוס (A4), אפשרויות תצוגה ומשוב, האם מסך הפתיחה הושלם, תאריך החלפת המיתרים (אופציונלי), מונה פשוט של מספר הפתיחות של האפליקציה (מתאפס אחרי 50) והאם כבר ביקשנו ממך לדרג את האפליקציה.</p>
+  <p>מידע זה אף פעם לא יוצא מהמכשיר שלך ואין לנו גישה אליו. הוא נמחק כשמשתמשים ב״איפוס כל ההגדרות״, מוחקים את נתוני האפליקציה או מסירים אותה.</p>
+  <h2>מה אנחנו לא עושים</h2>
+  <p>איננו אוספים שמות, כתובות אימייל, אנשי קשר, מיקום, מזהי מכשיר, סטטיסטיקות שימוש או דוחות קריסה.</p>
+  <p>גרסה זו אינה כוללת רכיבי אנליטיקה או מעקב של צד שלישי ואינה שולחת בקשות רשת.</p>
+  <p>איננו מוכרים, משכירים או משתפים מידע אישי עם אף אחד.</p>
+  <h2>הרשאות בשימוש</h2>
+  <p>מיקרופון (RECORD_AUDIO, MODIFY_AUDIO_SETTINGS) – כדי לשמוע ולכוון את הכלי, במכשיר בלבד.</p>
+  <p>רטט (VIBRATE) – רטט קצר אופציונלי כשמיתר מכוון.</p>
+  <p>אינטרנט (INTERNET) – מוצהר על ידי תשתית האפליקציה; האפליקציה אינה משתמשת בו לשליחה או קבלה של מידע.</p>
+  <h2>ילדים</h2>
+  <p>האפליקציה מתאימה לכל הגילאים. מכיוון שהיא אינה אוספת מידע אישי, היא אינה אוספת ביודעין מידע אישי מילדים, כולל ילדים מתחת לגיל 13 (COPPA) או 16 (GDPR).</p>
+  <h2>הזכויות שלך</h2>
+  <p>בהתאם למקום מגוריך (למשל האיחוד האירופי ובריטניה לפי ה-GDPR, קליפורניה לפי CCPA/CPRA, ברזיל לפי LGPD, ישראל לפי חוק הגנת הפרטיות, וחוקי פרטיות אחרים), יש לך זכות לעיין במידע האישי שלך, לתקן, למחוק או להעביר אותו ולהתנגד לעיבודו. מכיוון שאיננו אוספים או מחזיקים מידע אישי עליך, אין מידע שעלינו למסור, לתקן או למחוק. השליטה בהגדרות השמורות במכשיר שלך נשארת בידיך.</p>
+  <p>איננו ״מוכרים״ או ״משתפים״ מידע אישי כהגדרתם ב-CCPA/CPRA.</p>
+  <h2>אבטחה</h2>
+  <p>כל מה שהאפליקציה משתמשת בו נשאר באחסון הפרטי שלה במכשיר, מוגן על ידי ארגז החול של אנדרואיד.</p>
+  <h2>שינויים במדיניות</h2>
+  <p>אם גרסה עתידית תוסיף תכונה שמטפלת במידע אחרת (למשל פרסומות), נעדכן מדיניות זו לפני שהגרסה תשוחרר, נתאר בדיוק איזה מידע מעורב, ונבקש את הסכמתך היכן שהחוק דורש. תאריך התוקף למעלה מציין את הגרסה העדכנית.</p>
+  <h2>יצירת קשר</h2>
+  <p>שאלות על מדיניות זו: <a href="mailto:shimsh2+oudtunerapp@gmail.com">shimsh2+oudtunerapp@gmail.com</a></p>
+</article>
 <script>
   function show(l) {
     if (!document.getElementById(l)) l = 'en';
@@ -138,7 +173,7 @@
   var q = new URLSearchParams(location.search).get('lang');
   var h = location.hash.slice(1);
   var n = (navigator.language || 'en').slice(0, 2);
-  show(q || h || (['ar', 'tr'].indexOf(n) >= 0 ? n : 'en'));
+  show(q || h || (['ar', 'tr', 'he', 'iw'].indexOf(n) >= 0 ? (n === 'iw' ? 'he' : n) : 'en'));
   window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
 </script>
 </body>
