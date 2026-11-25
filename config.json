@@ -1,0 +1,28 @@
+{
+  "_help": "Oud Tuner remote settings. Edit values and save; the app reads this file at each launch. Out-of-range values are limited inside the app.",
+  "ads": {
+    "enabled": true,
+    "fromOpen": 1,
+    "bannerDelayMs": 300
+  },
+  "interstitial": {
+    "enabled": true,
+    "fromOpen": 3,
+    "onSettingsClose": true,
+    "onTuningPicked": true,
+    "onAllStringsTuned": false,
+    "minIntervalSec": 180,
+    "minSessionSec": 60,
+    "maxPerDay": 8
+  },
+  "rating": {
+    "enabled": true,
+    "fromOpen": 3,
+    "everyOpens": 5,
+    "maxAsks": 3,
+    "delayMs": 1500
+  },
+  "welcome": {
+    "delayMs": 1500
+  }
+}
